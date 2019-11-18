@@ -1,0 +1,943 @@
+:root {
+    --colorPrimary: #27364a;
+    --colorPrimaryDark: #151d25;
+    --colorSecondary: #9fb0a5;
+    --colorText1: #28374b;
+    --colorText2: #a0b1a6;
+    --colorWhite: #fff;
+    --colorBlackTrans: #00000080;
+}
+
+html {
+    text-decoration: none;
+    font-size: none;
+}
+
+.socialmediabutton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: var(--colorWhite);
+    display: grid;
+    background-color: var(--colorBlackTrans);
+    grid-template-columns: 1fr 57.5%;
+    grid-template-areas: 
+    "top-img top-menu";
+}
+
+.top-img {
+    grid-area: top-img;
+    text-align: center;
+    margin: auto;
+}
+
+.top-img img {
+    width: 100px;
+    background-color: none;
+}
+
+.top-menu {
+    display: inline;
+    grid-area: top-menu;
+    margin-right: 15px;
+}
+
+.top-menu ul {
+    list-style: none;
+}
+
+.top-menu a {
+    color: var(--colorWhite);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.25rem;
+}
+
+.top-menu img {
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: -7px;
+}
+
+.top-menu li{
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.wrapper {
+    background-image: url('../img/chanterelles-3523400.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.party {
+    color: var(--colorWhite);
+    list-style: none;
+    text-align: center;
+}
+
+.party h1 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 9%;
+    margin-bottom: 1%;
+    color: var(--fontwhite);
+    font-size: 4rem;
+    font-weight: initial;
+    font-style: unset;
+}
+
+.party li p {
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+.head-text {
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    width: 20%;
+    padding-block-end: 2rem;
+}
+
+.party-menu {
+    display: block;
+    color: var(--colorWhite);
+    background-color: var(--colorPrimaryDark);
+    width: 150px;
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding-top: 15px;
+    height: 1.75rem;
+}
+.storyall {
+    text-align: center;
+}
+
+.story-content {
+    display: grid;
+    margin-top: -75px;
+    margin-bottom: -75px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "story-img story-text";
+}
+
+.story-B {
+    display: none;
+    border: none;
+    background-color: var(--colorWhite);
+}
+
+.story-img {
+    grid-area: story-img;
+    width: 50%;
+    margin-left: 50%;
+    justify-content: center;
+    background-size: cover;
+    background-image: url('../img/Medsker_Harry\'s_02_008.jpg');
+}
+
+.close-story {
+    display: none;
+    color: var(--colorPrimary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-story:hover,
+.close-story:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.story-text {
+    grid-area: story-text;
+    display: block;
+    text-align: left;
+    background-color: var(--colorWhite);
+    margin-right: 50%;
+    padding: 1.5rem;
+    width: 55%;
+}
+
+.story-text h1 {
+    color: var(--fontgrey);
+    margin-top: 15px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: initial;
+    text-align: left;
+}
+.story-text p {
+    font-size: small;
+    line-height: 25px;
+    color: var(--fontgrey);
+}
+
+.story-text a{
+    text-align: center;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    padding-top: 12px;
+    margin-bottom: 15px;
+    width: 175px;
+    height: 28px;
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+}
+
+.top-bottom{
+    color: var(--colorWhite);
+    background-image: url('../img/food-1932466.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    height: 500px;
+    text-align: center;
+}
+
+.top-bottom h1{
+    padding-top: 12.5%;
+    margin-top: 15px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.top-bottom p{
+    padding-top: 10px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.menu-title{
+    color: var(--fontgrey);
+    font-family: 'Lobster Two', cursive;
+    font-weight: initial;
+    text-align: center;
+    margin: 3.5%;
+}
+
+.our-menu{
+    color: var(--colorWhite);
+    display: grid;
+    height: 25%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "menup1 menut1 menup2 menut2"
+    "menut3 menup3 menut4 menup4"
+    "menup5 menut5 menup6 menut6";
+}
+
+.menut{
+    background-color: var(--colorSecondary);
+    text-align: center;
+    font-size: 10px;
+}
+
+.text{
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 20px;
+}
+.price{
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.menut h1 {
+    padding-top: 10px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.menut1 {
+    grid-area: menut1;
+}
+
+.menut2 {
+    grid-area: menut2;
+}
+
+.menut3 {
+    grid-area: menut3;
+}
+
+.menut4 {
+    grid-area: menut4;
+}
+
+.menut5 {
+    grid-area: menut5;
+}
+
+.menut6 {
+    grid-area: menut6;
+}
+
+.menup {
+    background-color: var(--colorSecondary);
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.menup1 {
+    grid-area: menup1;
+    background-image: url('../img/159_roasted-baby-parsnips-with-sherry-maple-glaze-and-chanterelles.jpg');
+    background-position-x: 0%;
+}
+
+.menup2 {
+    grid-area: menup2;
+    background-image: url('../img/chanterelle-linguine08.jpg');
+}
+
+.menup3 {
+    grid-area: menup3;
+    background-image: url('../img/chanterelle-soup.jpg');
+    background-position-x: 0%;
+}
+
+.menup4 {
+    grid-area: menup4;
+    background-image: url('../img/Feature-Poached-Turbot-Pickled-Chanterelles.jpg');
+}
+
+.menup5 {
+    grid-area: menup5;
+    background-image: url('../img/Keto-Cheese-Stuffed-Zucchini-Boats-topped-with-Chanterelle-Mushrooms-5.jpg');
+}
+
+.menup6 {
+    grid-area: menup6;
+    background-image: url('../img/mushroom_mille_feuille_39761_16x9.jpg');
+}
+
+.showme{
+    margin-top: 1.25%;
+    text-align: center;
+}
+.showme h1 {
+    margin-bottom: 1rem;
+    color: var(--colorText1);
+    font-family: 'Lobster Two', cursive;
+}
+
+.logoarrow {
+    width: 25px;
+    margin-bottom: 1.25%;
+}
+
+.video-content{
+    text-align: center;
+    padding: 75px;
+    background-image: url('../img/bakery-1868396.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    box-shadow: inset 0 0 0 1000px var(--colorBlackTrans);
+}
+
+.video-play-B{
+    border: none;
+    display: none;
+    background-color: var(--colorWhite);
+}
+
+.close-video {
+    display: none;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-video:hover,
+.close-video:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.video-content p {
+    margin: auto;
+    letter-spacing: 5px;
+    color: var(--colorWhite);
+}
+
+.video-content img{
+    width: 100px;
+}
+
+.gallerystate {
+    text-align: center;
+}
+
+.gallerystate p {
+    margin-top: 2rem;
+    color: gray;
+}
+
+.gallerystate h1{
+    margin-top: 35px;
+    font-family: 'Lobster Two', cursive;
+    color: var(--colorText1);
+}
+
+.contactform {
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.subscribe {
+    color: var(--colorWhite);
+    width: 25%;
+    height: inherit;
+    box-sizing: border-box;
+    background-color: var(--colorPrimaryDark);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+}
+
+.inputemail {
+    box-sizing: border-box;
+    border: 2px solid var(--colorBlackTrans);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    width: 40%;
+    height: inherit;
+}
+
+.containergallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px;
+    grid-template-areas:
+    "picture1 picture2 picture3"
+}
+.picture {
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.picture1 {
+    grid-area: picture1;
+    background-image: url('../img/food-712665.jpg');
+}
+
+.picture2 {
+    grid-area: picture2;
+    background-image: url('../img/pancake-1984716.jpg');
+}
+
+.picture3 {
+    grid-area: picture3;
+    background-image: url('../img/breakfast-1246686.jpg');
+}
+
+.Bottom {
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.bottom-top {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-areas: 
+    "locationtitle hourstitle";
+}
+
+.locationtitle {
+    grid-area: locationtitle;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.locationall {
+    display: grid;
+    text-transform: initial;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-areas:
+    "locationleft locationright";
+}
+
+.location {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.locationleft {
+    grid-area: locationleft;
+}
+
+.hourstitle {
+    grid-area: hourstitle;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hoursall {
+    display: grid;
+    text-transform: initial;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-areas:
+    "hoursleft hoursright";
+}
+
+.hours {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.hoursleft {
+    grid-area: hoursleft;
+}
+
+.hoursright {
+    grid-area: hoursright;
+}
+
+.bottom-footer {
+    background-color: var(--colorPrimaryDark);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.bottom-footer-leftright {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-areas: 
+    "left right";
+}
+
+.left {
+    grid-area: left;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.left p {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.right {
+    grid-area: right;
+    text-align: right;
+}
+
+.right img {
+    padding-top: 6.5px;
+    padding-left: 15px;
+    width: 25px;
+}
+
+.menubutton {
+    background: var(--colorBlackTrans);
+    border: 0;
+    padding: 20px;
+}
+
+[aria-controls="menu-list"]{
+    display: none;
+    color: var(--colorWhite);
+}
+
+@media (max-width: 768px) {
+
+    .top-img img{
+        width: 150px;
+    }
+
+    .story-B {
+        display: unset;
+    }
+
+    /* The video (background) */
+    .story {
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Video content/box */
+    .story-content {
+        display: none;
+        background-color: var(--colorWhite);
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 100%; /* Could be more or less, depending on screen size*/
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 3.5s;
+        animation-name: animatetop;
+        animation-duration: 3.5s;
+    }
+
+    .close-story {
+        display: unset;
+    }
+
+    .menu {
+        order: -1;
+        perspective: 800px;
+    }
+
+    .menulist{
+        display: none;
+        padding-inline-start: 0;
+    }
+
+    .video-play-B{
+        display: unset;
+    }
+
+    /* The Modal (background) */
+    .video {
+        display: none; /* Hidden by default */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content/Box */
+    .video-content {
+        background-color: #fefefe;
+        margin: auto; /* 15% from the top and centered */
+        padding: 50px;
+        height: 50%;
+        border: 1px solid #888;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 3.5s;
+        animation-name: animatetop;
+        animation-duration: 3.5s;
+    }
+
+    .close-video {
+        display: unset;
+    }
+
+    @-webkit-keyframes animatetop {
+        from {transform: translate(300px); opacity:0} 
+        to {transform: translate(0); opacity:1}
+    }
+      
+    @keyframes animatetop {
+        from {transform: translate(300px); opacity:0}
+        to {transform: translate(0); opacity:1}
+    }
+    
+    .video-content p {
+        font-size: 15px;
+    }
+    
+    .video-content img{
+        width: 150px;
+    }
+
+    .top-menu{
+        margin-right: 0;
+    }
+
+    .top-menu a {
+        font-size: 15px;
+    }
+    
+    .top-menu img {
+        width: 40px;
+        margin: 0;
+        margin-top: 7px;
+    }
+
+    .top-menu ul {
+        margin-top: 0px;
+    }
+    
+    .top-menu li{
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .top-bottom {
+        height: 200px;
+    }
+
+    .our-menu {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "menup1 menut1" 
+        "menut2 menup2"
+        "menup3 menut3" 
+        "menut4 menup4"
+        "menup5 menut5"
+        "menut6 menup6";
+    }
+
+    .head-text{
+        width: 50%;
+    }
+
+    .party h1 {
+        margin-top: 12%;
+        margin-bottom: 4%;
+    }
+
+    .head-text {
+        margin-top: 5%;
+    }
+
+    .party-menu{
+        margin-top: 3%;
+    }
+
+    .wrapper {
+        height: unset;
+    }
+
+    .storyall {
+        margin-top: 25px;
+    }
+
+    .story-img {
+        margin: 0;
+        width: 100%;
+    }
+    .story-text {
+        margin: 0;
+        padding-right: 25%;
+        width: 100%;
+    }
+
+    .picture {
+        background-position-x: 75%;
+    }
+
+    .containergallery {
+        height: 840px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "picture1"
+        "picture2"
+        "picture3";
+    }
+
+    [aria-controls="menu-list"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    [aria-expanded="false"] .close-menu{
+        display: none;
+    }
+
+    [aria-expanded="true"] .open-menu{
+        display: none;
+    }
+
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: rotateX(90deg);
+        transition: all 0,5sec;
+    }
+
+    [aria-expanded="true"] ~ ul{
+        display: grid;
+        max-height: 500px;
+    }
+
+    .menubutton {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    
+    .head-text {
+        width: 100%;
+    }
+
+    .condainer {
+        width: 100%;
+    }
+
+    .bottom-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left {
+        font-size: 11px;
+    }
+
+    .bottom-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bottom-top p {
+        font-size: 11px;
+    }
+
+    .menut {
+        font-size: 13px;
+    }
+
+    .menubutton {
+        font-size: 15px;
+        
+    }
+
+    .locationall {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "locationleft"
+        "locationright";
+    }
+
+    .locationtitle {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hoursall {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hoursleft"
+        "hoursright";
+    }
+
+    .hourstitle {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .top-menu a {
+        font-size: 15px;
+    }
+
+    .top-bottom p {
+        font-size: 20px;
+    }
+
+    .menut {
+        font-size: 15px;
+    }
+    
+    .our-menu {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "menup1"
+            "menut1" 
+            "menup2"
+            "menut2"
+            "menup3"
+            "menut3" 
+            "menup4"
+            "menut4"
+            "menup5"
+            "menut5"
+            "menup6"
+            "menut6";
+    }
+
+    .video-content {
+        height: 30%;
+        padding: 40px;
+    }
+
+    .menup {
+        height: 189px;
+    }
+
+    .inputemail {
+        width: unset;
+    }
+
+    .subscribe {
+        width: unset;
+    }
+
+    .bottom-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "locationtitle"
+        "hourstitle";
+    }
+
+    .bottom-top p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .locationtitle {
+        font-size: unset;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .hourstitle {
+        font-size: unset;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .bottom-footer-leftright {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "left"
+        "right";
+    }
+    .right {
+        text-align: center;
+    }
+}
